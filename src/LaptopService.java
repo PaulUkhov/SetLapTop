@@ -15,6 +15,11 @@ public class LaptopService {
                 Object value = filter.getValue();
 
                 switch (criterion) {
+                        case "brand":
+                        if (!laptop.getBrand().equalsIgnoreCase((String) value)) {
+                            matches = false;
+                        }
+                        break;
                     case "ram":
                         if (laptop.getRam() < (Integer) value) {
                             matches = false;
