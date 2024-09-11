@@ -21,12 +21,12 @@ public class LaptopService {
                         }
                         break;
                     case "ram":
-                        if (laptop.getRam() < (Integer) value) {
+                        if (laptop.getRam() >= (Integer) value) {
                             matches = false;
                         }
                         break;
                     case "storage":
-                        if (laptop.getStorage() < (Integer) value) {
+                        if (laptop.getStorage() >= (Integer) value) {
                             matches = false;
                         }
                         break;
